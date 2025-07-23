@@ -98,7 +98,6 @@ Prosedur ini mencakup perancangan kontroler, implementasi kode, dan pengujian si
 
 ### 2. Implementasi pada Mikrokontroler
 
-```cpp
 // Definisikan pin
 const int tempPin = A0;      // Pin sensor suhu LM35
 const int fanPWMPin = 9;     // Pin PWM untuk MOSFET driver
@@ -153,6 +152,7 @@ float readTemperature(int pin) {
   float voltage = (sensorVal / 1023.0) * 5.0;
   return voltage * 100.0;
 }
+
 
 ### 3. Pengujian dan Validasi Sistem
 
